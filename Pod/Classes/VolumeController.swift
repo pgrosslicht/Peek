@@ -50,6 +50,12 @@ final class VolumeController: NSObject, PeekActivating {
         
         NotificationCenter.default.addObserver(self, selector: #selector(register), name: .UIApplicationDidBecomeActive, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(unregister), name: .UIApplicationWillResignActive, object: nil)
+        if #available(iOS 11.0, *) {
+            NotificationCenter.default.addObserver(self, selector: #selector(screenDidChange), name: .UIScreenCapturedDidChange, object: nil)
+        } else {
+            NotificationCenter.default.addObserver(self, selector: #selector(screenDidChange), name: .AVAudioSessionRouteChange, object: nil)
+        }
+
         register()
     }
     
@@ -117,4 +123,11 @@ final class VolumeController: NSObject, PeekActivating {
         session = nil
     }
     
+    @objc func screenDidChange() {
+        if UIScreen.main.peek_isCaptured {
+            peek.options.activationMode = .shake
+        } else {
+            peek.options.activationMode = .auto
+        }
+    }
 }
