@@ -45,6 +45,7 @@
 		6073D6C39DC1A4D1E6EF2C14D8169D46 /* NSValue+Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47A0788BB651CAF3D000191E97F7E01 /* NSValue+Transformer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		607D33B5BAECF7120297A078176407F1 /* NSLayoutConstraint+Peekable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B027FB8F3CC6183AB5D5A2B0BC5154AE /* NSLayoutConstraint+Peekable.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		61CDF7E9CF47E0847BFFB8C8A6DC9D12 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B76134CF3E2AC7E0FE04B10EC3FD11 /* Color+Extensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		678E0D00207F5FB0000A24BC /* UIScreen+Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678E0CFF207F5FB0000A24BC /* UIScreen+Capture.swift */; };
 		6DFD20E6636ED608E85DDD653AAB5D7B /* UIViewController+Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FF0156B81F6441DB76D00DC5CA2B33 /* UIViewController+Modal.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		700E7600581FA9E11E0607424723D037 /* Images+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F0F130B6925E55C6F0867E598686F0 /* Images+Orientation.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		71875B45E90D47D927FE1B089D4BB34F /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BAAFE4F90F9ECEF2D933C80C2292FD /* UIView+Extensions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -168,6 +169,7 @@
 		61F405FC4E747440D83BE45B1690C0D7 /* CALayer+Peekable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CALayer+Peekable.swift"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		66D6116E25E97EB242374838669F0A10 /* UISwitch+Peekable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UISwitch+Peekable.swift"; sourceTree = "<group>"; };
+		678E0CFF207F5FB0000A24BC /* UIScreen+Capture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Capture.swift"; sourceTree = "<group>"; };
 		6AD9325C7033118C7E6D1DBD4AF98375 /* UIFont+Peekable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+Peekable.swift"; sourceTree = "<group>"; };
 		6CD3C682222D2A0DEE3FBBA6A5AC3F77 /* PeekTheme+Colors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PeekTheme+Colors.swift"; path = "Pod/Classes/PeekTheme+Colors.swift"; sourceTree = "<group>"; };
 		6E49AECF68401BE06609604056642A01 /* Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -525,6 +527,7 @@
 				D4090306352B4CABF6042647FDD565E7 /* UIViewController+Extensions.swift */,
 				61717C4EB7EC219A8D8E39C2E049B576 /* UIWindow+Extensions.swift */,
 				54BA18A22069429A002B9C5B /* UIDevice+Extensions.swift */,
+				678E0CFF207F5FB0000A24BC /* UIScreen+Capture.swift */,
 			);
 			name = Helpers;
 			path = Pod/Classes/Helpers;
@@ -725,6 +728,7 @@
 				2D3BA22ED9A2CBF21F2E85D30175A25E /* UIColor+Peekable.swift in Sources */,
 				D78956F697C89040381D30392F8C87CA /* UIColor+Transformer.swift in Sources */,
 				E513CD275108896DA9ED2AE44A1D2B7C /* UIControl+Peekable.swift in Sources */,
+				678E0D00207F5FB0000A24BC /* UIScreen+Capture.swift in Sources */,
 				570AE69F67442A6AD8508A05332C6787 /* UIDevice+Peekable.swift in Sources */,
 				26C6A05919B58CB373A5E0029A39C8DA /* UIFont+Peekable.swift in Sources */,
 				E3E57B06C990ED886411BDE74DE61CAA /* UIImage+Peekable.swift in Sources */,
